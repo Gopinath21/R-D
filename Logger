@@ -1,0 +1,35 @@
+Logging :
+A java logging framework is a computer data logging package for the java platform.
+----
+Logging means : Recording of activity. 
+
+Logging is broken into three major pieces :
+1)  Logger:The logger is reposible for capturing the messageto be logged along with certain metadata and passing it
+to logging framework.
+
+
+After receving the message , the framework calls Formatter with the message.
+
+2)  Formatter:The Formatter formats it for output. 
+
+A Formatter is an object that formats a given object. Mostly this consists of taking the binary object and converting it to a string representation.
+
+The framework then hands the formatted message to the appropriate Appender for disposition .
+
+
+3)  Handler (Appender):
+The used to the appropriate Appender for disposition. This might include a console display , writing to 
+disk , appending to a database , or email.
+
+--------------------------------------------
+Level	Description
+FATAL	Severe errors that cause premature termination. Expect these to be immediately visible on a status console.
+ERROR	Other runtime errors or unexpected conditions. Expect these to be immediately visible on a status console.
+WARNING
+INFO	Interesting runtime events (startup/shutdown). Expect these to be immediately visible on a console, so be conservative and keep to a minimum.
+DEBUG	detailed information on the flow through the system. Expect these to be written to logs only.
+TRACE	more detailed information. Expect these to be written to logs only.
+
+
+
+A Formatter is an object that formats a given object. Mostly this consists of taking the binary object and converting it to a string representation.
